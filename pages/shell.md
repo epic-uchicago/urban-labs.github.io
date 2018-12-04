@@ -1,6 +1,7 @@
 # Instruction on using shell script to run code from different programs:
 
    1.  Use any plain text editor to create a file with the following content and save as `filename.sh`:
+
 ```
 #!/bin/bash
 

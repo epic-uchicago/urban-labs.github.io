@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Literature · GitBook</title>
+        <title>Using shell script · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,7 +58,7 @@
 
     
     
-    <link rel="prev" href="getting-started.html" />
+    <link rel="prev" href="cron.html" />
     
 
     </head>
@@ -100,12 +100,26 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="getting-started.html">
+        <li class="chapter " data-level="1.2" data-path="coding.html">
             
-                <a href="getting-started.html">
+                <a href="coding.html">
             
                     
-                    Getting Started
+                    Coding
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cron.html">
+            
+                <a href="cron.html">
+            
+                    
+                    Setting up a Cron job
             
                 </a>
             
@@ -113,16 +127,21 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="literature.html">
+        <li class="chapter active" data-level="1.2.2" data-path="shell.html">
             
-                <a href="literature.html">
+                <a href="shell.html">
             
                     
-                    Literature
+                    Using shell script
             
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -156,7 +175,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Literature</a>
+        <a href=".." >Using shell script</a>
     </h1>
 </div>
 
@@ -171,8 +190,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="literature">Literature</h1>
-<h2 id="this-is-a-list-of-recommended-literature">This is a list of recommended literature</h2>
+                                <h1 id="instruction-on-using-shell-script-to-run-code-from-different-programs">Instruction on using shell script to run code from different programs:</h1>
+<ol>
+<li>Use any plain text editor to create a file with the following content and save as <code>filename.sh</code>:</li>
+</ol>
+<pre><code>#!/bin/bash
+
+#The first line of comment has to be there, so you can add any comments
+
+#if you want to display some messages in the console
+
+echo &quot;something you want the command prompt to display&#x201D;
+
+#if you want to run stata code
+
+stata -b do do-file-name-that-you-want-to-run.do
+
+#if you want to run R code
+
+Rscript r-code-file-name-that-you-want-to-run.R
+</code></pre><ol>
+<li><p>Put it in the same directory as all your code</p>
+</li>
+<li><p><code>cd</code> to that directory, type in command prompt <code>sh filename.sh</code>, and hit Enter. 
+The script should start running. Using <code>echo</code> to display some messages from time to time is recommended so that you know your script is running properly.</p>
+</li>
+<li><p>If an error with something like not having privilege or access right appears, use the command:</p>
+</li>
+</ol>
+<p><code>chmod +x script_name.sh</code></p>
+<p>and repeat step 3.</p>
 
                                 
                                 </section>
@@ -200,7 +247,7 @@
 
             
                 
-                <a href="getting-started.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Getting Started">
+                <a href="cron.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Setting up a Cron job">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -212,7 +259,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Literature","level":"1.3","depth":1,"previous":{"title":"Getting Started","level":"1.2","depth":1,"path":"pages/getting-started.md","ref":"pages/getting-started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/literature.md","mtime":"2018-11-06T23:55:27.705Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-07T00:22:30.326Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Using shell script","level":"1.2.2","depth":2,"previous":{"title":"Setting up a Cron job","level":"1.2.1","depth":2,"path":"pages/cron.md","ref":"pages/cron.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/shell.md","mtime":"2018-12-04T19:44:32.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-04T19:47:19.318Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
