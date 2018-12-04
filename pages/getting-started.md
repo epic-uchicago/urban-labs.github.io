@@ -1,11 +1,17 @@
-# Introduction: General reserach workflow
+# Onboarding
+ 
+- Integrate with existing on-boarding checklist 
+- UL environment/servers (guides to using Darrow, remote desktop, etc.) 
+- Note that this will all change sometime soon...
 
-## Step 1: Collect data
+## University Systems (shortcuts to Box links?)
 
-These are historical weather data and outcome data.
+ - AURA/IRB (guidance we’ve received, templates, etc.)
+ - GEMS (expense reports)
+ - HR policies (voting, professional development, etc.)
 
-## Step 2: Include other data, ie. income
+## Troubleshooting 
 
-## Step 3: Projection
+Typical problems that people have and how to solve them:
 
-## Step 4: Estimate damage
+TODO Things to know, like how to access VPN, etc. 
