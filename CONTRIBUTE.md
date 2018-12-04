@@ -1,9 +1,9 @@
 # Guide
 
-It is ok to make changes of the following:
-1. All in dir `pages`
-2. `SUMMARY.md`
-3. `README.md`
+To make changes of the guide change the following documents:
+1. Any file in dir `pages`
+2. `SUMMARY.md` represents menu on the lefthand side
+3. `README.md` represents the first page of the guide
 
 Everything else is generated with:
 
@@ -11,6 +11,14 @@ Everything else is generated with:
 npm install
 gitbook install
 gulp
+```
+Publish the guide with:
+
+```
+git add -u
+git add docs
+git commit -m "update"
+git push
 ```
 
 To run locally and test:
